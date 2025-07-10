@@ -3,7 +3,8 @@ from setuptools import setup, find_packages
 setup(
     name='ace_gridder',
     version='0.1',
-    packages=find_packages(),
+    package_dir={'': 'ace_gridder'},
+    packages=find_packages(where='ace_gridder'),
     install_requires=[
         "numpy",
         "scipy",
